@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link 
+      href="style.css"
+      rel="stylesheet"
+    />
+
+    <link
+     href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+
+    <title>Devchallenges | Checkout</title>
+
+  </head>
+  <body>
+    <header>
+      <h3>Checkout</h3>
+    </header>
+    <section class="main--container--checkout">
+      <div class="checkout--form--container">
+        
+        <div class="form--contact--container">
+          <form action="">
+
+            <!-- Contact information -->
+            <h3 class="contact--information--text">Contact information</h3>
+            <label for="input-box">E-mail</label>
+            <div class=" input--container" id="input--box">
+              <span class="input--icon material-icons">email</span>
+              <input id="email" type="email" placeholder="Enter your email..." required>
+            </div>
+
+            <label for="input-box">phone</label>
+            <div class=" input--container" id="input--box">
+              <span class="input--icon material-icons">call</span>
+              <input id="phone" type="phone" placeholder="Enter your phone..." required>
+            </div>
+
+            <!-- Shipping address -->
+            <h3 class="shipping--address--text">Shipping address</h3>
+            <label for="input-box">full name</label>
+            <div class=" input--container" id="input--box">
+              <span class="input--icon material-icons">account_circle</span>
+              <input id="fullName" type="text" placeholder="Enter your full name..." required>
+            </div>
+
+            <label for="input-box">Address</label>
+            <div class=" input--container" id="input--box">
+              <span class="input--icon material-icons">home</span>
+              <input id="address" type="text" placeholder="Your address..." required>
+            </div>
+
+            <label for="input-box">City</label>
+            <div class=" input--container" id="input--box">
+              <span class="input--icon material-icons">location_city</span>
+              <input id="city" type="text" placeholder="Your city..." required>
+            </div>
+
+            <div class="wrapper--country--postal">
+
+              <div class="country--input--wrap">
+                <label for="input-box">country</label>
+                <div class=" input--container" id="input--box">
+                  <span class="input--icon material-icons">public</span>
+                  <select id="country" name="country" required>
+                    <option value="Your country">Your country..</option>
+                    <option value="Ht"> Haiti</option>
+                    <option value="Can">Canada</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="postal--input--wrap">
+                <label for="input-box">Postal code</label>
+                <div class=" input--container" id="input--box">
+                  <span class="input--icon material-icons">markunread_mailbox</span>
+                  <input id="postal-code" type="text" placeholder="Your postal code.. " required>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <input type="checkbox" id="save--info" name="name" required/>
+              <label for="save--info">Save this information for next time.</label> 
+            </div>
+
+            
+          </form>
+          <button class="btn-submit" type="submit">
+            Submit
+          </button>
+        </div>
+      </div>
+
+      <div class="card--container">
+          <div class="card--component-container column">
+            <div class="row">
+              <img class="card--image" src="photo1.png" alt="photo1" srcset="">
+              <div class="item--card column">
+                <div>
+                  <h5>Vintage Backbag</h5>
+                  <div class="container--price">
+                    <span class="vintage--price" id="first--price" >54.99$</span>
+                    <span id="second--price">94.99$</span>
+                  </div>
+                </div>
+                <div class="quantity--value vintage--backbag row">
+                  <span class="reduce--btn--vintage" > - </span>
+                  <span class="value--vintage"> 0 </span>
+                  <span class="increase--btn--vintage" >+</span>
+                </div>
+
+              </div>
+            </div>
+            <!--  -->
+
+            <div class="row">
+              <img class="card--image" src="photo2.png" alt="photo2" srcset="">
+              <div class="item--card column">
+                <div>
+                  <h5>Levi Shoes</h5>
+                  <div class="container--price">
+                    <span class="shoes--price" id="first--price">74.99$</span>
+                    <span id="second--price">124.99$</span>
+                  </div>
+                </div>
+                <div class="quantity--value levi--shoes row">
+                  <span class="reduce--btn--shoes"> - </span>
+                  <span class="value--shoes">0</span>
+                  <span class="increase--btn--shoes">+</span>
+                </div>
+
+              </div>
+            </div>
+            <!--  -->
+            <section>
+              <div class="amount--shipping ">
+               <p>Shipping</p>
+                <p id="shipping--price">$19</p>
+              </div>
+
+              <div class="total--amount">
+               <p>Total</p>
+               <p id="total--price">$149.98</p>
+              </div>
+            </section>
+          </div>
+      </div>
+    </section>
+    <footer class="footer">create by AlexandreLudens - devChallenges.io</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
